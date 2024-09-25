@@ -1,0 +1,14 @@
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\05-Tango-Attack\TangoAttack\bin\Debug\net8.0\TangoAttack.exe
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\05-Tango-Attack\TangoAttack\bin\Debug\net8.0\TangoAttack.deps.json
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\05-Tango-Attack\TangoAttack\bin\Debug\net8.0\TangoAttack.runtimeconfig.json
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\05-Tango-Attack\TangoAttack\bin\Debug\net8.0\TangoAttack.dll
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\05-Tango-Attack\TangoAttack\bin\Debug\net8.0\TangoAttack.pdb
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\05-Tango-Attack\TangoAttack\obj\Debug\net8.0\TangoAttack.GeneratedMSBuildEditorConfig.editorconfig
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\05-Tango-Attack\TangoAttack\obj\Debug\net8.0\TangoAttack.AssemblyInfoInputs.cache
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\05-Tango-Attack\TangoAttack\obj\Debug\net8.0\TangoAttack.AssemblyInfo.cs
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\05-Tango-Attack\TangoAttack\obj\Debug\net8.0\TangoAttack.csproj.CoreCompileInputs.cache
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\05-Tango-Attack\TangoAttack\obj\Debug\net8.0\TangoAttack.dll
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\05-Tango-Attack\TangoAttack\obj\Debug\net8.0\refint\TangoAttack.dll
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\05-Tango-Attack\TangoAttack\obj\Debug\net8.0\TangoAttack.pdb
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\05-Tango-Attack\TangoAttack\obj\Debug\net8.0\TangoAttack.genruntimeconfig.cache
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\05-Tango-Attack\TangoAttack\obj\Debug\net8.0\ref\TangoAttack.dll

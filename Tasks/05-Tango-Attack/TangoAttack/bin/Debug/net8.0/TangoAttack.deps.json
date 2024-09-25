@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TangoAttack/1.0.0": {
+        "runtime": {
+          "TangoAttack.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TangoAttack/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
