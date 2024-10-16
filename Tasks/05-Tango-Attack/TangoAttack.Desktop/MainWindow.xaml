@@ -1,0 +1,104 @@
+﻿<Window x:Class="TangoAttack.Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:local="clr-namespace:TangoAttack.Desktop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <Grid Grid.Row="0" VerticalAlignment="Top" Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="0" Text="Bit Length:" Margin="0,0,10,10"/>
+                <TextBox x:Name="BitLength" Grid.Column="1" Text="" MaxLength="1" Width="Auto" Margin="0,0,0,10"
+                         PreviewTextInput="BitLength_PreviewTextInput" 
+                         PreviewKeyDown="BitLength_PreviewKeyDown"/>
+
+                <TextBlock Grid.Column="0" Grid.Row="1" Text="Sessions:" Margin="0,0,10,0"/>
+                <TextBox x:Name="SessionsTextBox" Grid.Column="1" Grid.Row="1" Text="" MaxLength="7" Width="Auto" 
+                         PreviewTextInput="SessionsTextBox_PreviewTextInput" 
+                         PreviewKeyDown="SessionsTextBox_PreviewKeyDown"/>
+
+                <Button x:Name="StartSimulationBtn" Grid.Column="1" Grid.Row="2" Content="Start Simulation" Click="StartSimulationBtn_Click"  Margin="0,10,0,0"/>
+            </Grid>
+
+            <Grid Grid.Row="1" VerticalAlignment="Top" Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="0" Grid.Row="0" Text="K1:" Margin="0,0,10,10"/>
+                <TextBox x:Name="K1" Grid.Column="1" Grid.Row="0" Text="" Width="Auto" IsReadOnly="True" Margin="0,0,0,10"/>
+
+                <TextBlock Grid.Column="0" Grid.Row="1" Text="K2:" Margin="0,0,10,10"/>
+                <TextBox x:Name="K2" Grid.Column="1" Grid.Row="1" Text="" Width="Auto" IsReadOnly="True" Margin="0,0,0,10"/>
+
+                <TextBlock Grid.Column="0" Grid.Row="2" Text="ID:" Margin="0,0,10,10"/>
+                <TextBox x:Name="ID"  Grid.Column="1" Grid.Row="2" Text="" Width="Auto" IsReadOnly="True" Margin="0,0,0,10"/>
+            </Grid>
+
+            <Grid Grid.Row="2" VerticalAlignment="Top" Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="0" Grid.Row="0" Text="K1 Estimation:" Margin="0,0,10,10"/>
+                <TextBox x:Name="K1E" Grid.Column="1" Grid.Row="0" Text="" Width="Auto" IsReadOnly="True" Margin="0,0,0,10"/>
+
+                <TextBlock Grid.Column="0" Grid.Row="1" Text="K2 Estimation:" Margin="0,0,10,10"/>
+                <TextBox x:Name="K2E" Grid.Column="1" Grid.Row="1" Text="" Width="Auto" IsReadOnly="True" Margin="0,0,0,10"/>
+
+                <TextBlock Grid.Column="0" Grid.Row="2" Text="ID Estimation:" Margin="0,0,10,10"/>
+                <TextBox x:Name="IDE"  Grid.Column="1" Grid.Row="2" Text="" Width="Auto" IsReadOnly="True" Margin="0,0,0,10"/>
+            </Grid>
+
+        </Grid>
+
+        <lvc:CartesianChart Grid.Row="0" Grid.Column="1" Margin="-4,0,0,0" Series="{Binding SeriesCollection}">
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis Title="Sessions" Labels="{Binding Labels}"/>
+            </lvc:CartesianChart.AxisX>
+
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis Title="Hamming Distance" MinValue="0"/>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
+    </Grid>
+</Window>

@@ -1,64 +1,65 @@
-﻿using System;
-
-namespace DavidPrasadTangoAttack
+﻿namespace TangoAttack
 {
-    class Program
+    public static class Program
     {
-        static int EncryptDavidPrasad(int plainText, int key)
+        public static void Main(string[] args)
         {
-            return plainText ^ key;
-        }
+            int bitLength = 4;
+            Random random = new Random();
 
-        static int TangoAttack(int cipherText, int knownPlainText)
-        {
-            return cipherText ^ knownPlainText;
-        }
+            // Inicialización de la etiqueta (Tag) con valores aleatorios
+            Console.WriteLine(1 << bitLength);
+            int PID2 = random.Next(0, 1 << bitLength);
+            int ID = random.Next(0, 1 << bitLength);
+            //ID = 0x52;
 
-        static void Main(string[] args)
-        {
-            
-            int a = 5; // 0101 en binario
-int result1 = a << 3; // Desplaza 1 posición a la izquierda: 1010 en binario, que es 10 en decimal
-int result2 = a << 2; // Desplaza 2 posiciones a la izquierda: 10100 en binario, que es 20 en decimal
+            Console.WriteLine($"PID2: {Convert.ToString(PID2, 2)}, ID: {Convert.ToString(ID, 2)}");
+            Console.WriteLine($"PID2: {PID2}, ID: {ID}");
 
-Console.WriteLine(result1); // Imprime 10
-Console.WriteLine(result2); // Imprime 20
+            int sessions = 100;
 
-            return;
-            
-            
-            Console.WriteLine("--Tango Attack--");
+            var passiveTangoCryptanalysis = new PassiveTangoCryptanalysis(0, 0, bitLength);
 
-            
-            for (int bitLength = 4; bitLength <= 8; bitLength++)
+            do
             {
-                int maxValue = (1 << bitLength) - 1;
-                Console.WriteLine($"\n--- Simulación para {bitLength} bits ---");
+                var server = new Server();
+                var (K1, K2) = server.ProvideKeys(PID2);
+                var tag = new Tag(PID2, PID2, ID, K1, K2);
 
-                // Prueba de encriptación y desencriptación usando David-Prasad
-                int plainText = new Random().Next(0, maxValue); 
-                int key = new Random().Next(0, maxValue);   
+                // Inicialización del lector
+                var reader = new Reader();
+                reader.RequestCertificate(server); // Paso 1
 
+                // El lector solicita las claves del servidor usando PID2 (Paso 3)
+                int n1 = random.Next(0, (1 << bitLength)); // Nonce n1
+                int n2 = random.Next(0, (1 << bitLength)); // Nonce n2
+                var (A, B, D) = reader.GenerateMessages(PID2, K1, K2, n1, n2); // Paso 4
 
-                int cipherText = EncryptDavidPrasad(plainText, key);
-                Console.WriteLine($"Texto en claro: {Convert.ToString(plainText, 2).PadLeft(bitLength, '0')}");
-                Console.WriteLine($"Clave: {Convert.ToString(key, 2).PadLeft(bitLength, '0')}");
-                Console.WriteLine($"Texto cifrado: {Convert.ToString(cipherText, 2).PadLeft(bitLength, '0')}");
+                // La etiqueta genera respuesta E y F (Paso 5)
+                var (E, F) = tag.GenerateResponse(A, B, D, n1, n2);
 
-                // Simulación del Tango Attack
-                int recoveredKey = TangoAttack(cipherText, plainText);
-                Console.WriteLine($"Clave recuperada por Tango Attack: {Convert.ToString(recoveredKey, 2).PadLeft(bitLength, '0')}");
+                // El lector verifica F y recupera ID (Paso 6)
+                int recoveredID = reader.VerifyTagResponse(E, F, K1, K2, n1, n2);
 
-                // Verificación
-                if (recoveredKey == key)
+                if(sessions == 100)
                 {
-                    Console.WriteLine("Ataque exitoso: Clave correctamente recuperada.");
+                    passiveTangoCryptanalysis = new PassiveTangoCryptanalysis(E, F, bitLength);
                 }
                 else
                 {
-                    Console.WriteLine("Ataque fallido: Clave incorrecta.");
+                    if (passiveTangoCryptanalysis.HammingDistance(E, F))
+                    {
+                        PassiveTangoCryptanalysis.Session(PID2, A, B, D, E, F);
+                    }
                 }
+                 // Actualización de pseudónimos en la etiqueta
+                tag.UpdatePseudonyms(n1, n2);
+
+                sessions--;
             }
+            while (sessions > 0);
+
+            passiveTangoCryptanalysis.PrintResults(sessions);
         }
     }
 }

@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DBBDE75A-BB23-4CE6-8478-1C6519544833}|..\\TangoAttack.Desktop\\TangoAttack.Desktop.csproj|e:\\uni\\semester-9\\advanced topics in software engineering\\tasks\\05-tango-attack\\tangoattack.desktop\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2E30F2E-EA7F-4CBF-90AF-D22A565E9700}|..\\TangoAttack3\\TangoAttack3.csproj|e:\\uni\\semester-9\\advanced topics in software engineering\\tasks\\05-tango-attack\\tangoattack3\\attacker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBBDE75A-BB23-4CE6-8478-1C6519544833}|..\\TangoAttack.Desktop\\TangoAttack.Desktop.csproj|e:\\uni\\semester-9\\advanced topics in software engineering\\tasks\\05-tango-attack\\tangoattack.desktop\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2E30F2E-EA7F-4CBF-90AF-D22A565E9700}|..\\TangoAttack3\\TangoAttack3.csproj|e:\\uni\\semester-9\\advanced topics in software engineering\\tasks\\05-tango-attack\\tangoattack3\\simulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2E30F2E-EA7F-4CBF-90AF-D22A565E9700}|..\\TangoAttack3\\TangoAttack3.csproj|e:\\uni\\semester-9\\advanced topics in software engineering\\tasks\\05-tango-attack\\tangoattack3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2E30F2E-EA7F-4CBF-90AF-D22A565E9700}|..\\TangoAttack3\\TangoAttack3.csproj|e:\\uni\\semester-9\\advanced topics in software engineering\\tasks\\05-tango-attack\\tangoattack3\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2E30F2E-EA7F-4CBF-90AF-D22A565E9700}|..\\TangoAttack3\\TangoAttack3.csproj|e:\\uni\\semester-9\\advanced topics in software engineering\\tasks\\05-tango-attack\\tangoattack3\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 380,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack.Desktop\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\TangoAttack.Desktop\\MainWindow.xaml",
+              "ToolTip": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack.Desktop\\MainWindow.xaml",
+              "RelativeToolTip": "..\\TangoAttack.Desktop\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-02T09:37:02.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack.Desktop\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\TangoAttack.Desktop\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack.Desktop\\MainWindow.xaml.cs",
+              "RelativeToolTip": "..\\TangoAttack.Desktop\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAMIAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T09:36:19.397Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 176,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Simulator.cs",
+              "DocumentMoniker": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack3\\Simulator.cs",
+              "RelativeDocumentMoniker": "..\\TangoAttack3\\Simulator.cs",
+              "ToolTip": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack3\\Simulator.cs",
+              "RelativeToolTip": "..\\TangoAttack3\\Simulator.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA2wGEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T01:39:55.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Attacker.cs",
+              "DocumentMoniker": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack3\\Attacker.cs",
+              "RelativeDocumentMoniker": "..\\TangoAttack3\\Attacker.cs",
+              "ToolTip": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack3\\Attacker.cs",
+              "RelativeToolTip": "..\\TangoAttack3\\Attacker.cs",
+              "ViewState": "AQIAALgAAAAAAAAAAAAYwNUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T01:36:01.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack3\\Program.cs",
+              "RelativeDocumentMoniker": "..\\TangoAttack3\\Program.cs",
+              "ToolTip": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack3\\Program.cs",
+              "RelativeToolTip": "..\\TangoAttack3\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T01:39:08.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Server.cs",
+              "DocumentMoniker": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack3\\Server.cs",
+              "RelativeDocumentMoniker": "..\\TangoAttack3\\Server.cs",
+              "ToolTip": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack3\\Server.cs",
+              "RelativeToolTip": "..\\TangoAttack3\\Server.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T09:05:49.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Tag.cs",
+              "DocumentMoniker": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack3\\Tag.cs",
+              "RelativeDocumentMoniker": "..\\TangoAttack3\\Tag.cs",
+              "ToolTip": "E:\\UNI\\semester-9\\Advanced Topics in Software Engineering\\Tasks\\05-Tango-Attack\\TangoAttack3\\Tag.cs",
+              "RelativeToolTip": "..\\TangoAttack3\\Tag.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAwwEkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T01:38:27.738Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
