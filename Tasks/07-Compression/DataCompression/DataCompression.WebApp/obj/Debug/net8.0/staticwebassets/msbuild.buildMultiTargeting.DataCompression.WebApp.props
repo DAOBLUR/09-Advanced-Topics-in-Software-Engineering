@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DataCompression.WebApp.props" />
+</Project>

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCompression.WebAPI", "DataCompression.WebAPI\DataCompression.WebAPI.csproj", "{3D06D4A2-D48C-4B2A-8B17-C5D59D6B1356}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCompression.WebApp", "DataCompression.WebApp\DataCompression.WebApp.csproj", "{854B8B07-2BA3-486C-83DB-B214477996A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCompression.Algorithms", "DataCompression.Algorithms\DataCompression.Algorithms.csproj", "{30CDBF95-4BE0-40DB-9E42-EEAFD0BEDD33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D06D4A2-D48C-4B2A-8B17-C5D59D6B1356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D06D4A2-D48C-4B2A-8B17-C5D59D6B1356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D06D4A2-D48C-4B2A-8B17-C5D59D6B1356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D06D4A2-D48C-4B2A-8B17-C5D59D6B1356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{854B8B07-2BA3-486C-83DB-B214477996A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854B8B07-2BA3-486C-83DB-B214477996A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854B8B07-2BA3-486C-83DB-B214477996A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854B8B07-2BA3-486C-83DB-B214477996A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30CDBF95-4BE0-40DB-9E42-EEAFD0BEDD33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30CDBF95-4BE0-40DB-9E42-EEAFD0BEDD33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30CDBF95-4BE0-40DB-9E42-EEAFD0BEDD33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30CDBF95-4BE0-40DB-9E42-EEAFD0BEDD33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7F44204-A9CD-4B3B-B782-93D5DC8D0141}
+	EndGlobalSection
+EndGlobal

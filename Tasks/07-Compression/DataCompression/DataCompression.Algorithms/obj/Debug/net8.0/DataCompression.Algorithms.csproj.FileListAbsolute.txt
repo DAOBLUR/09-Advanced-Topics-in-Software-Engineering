@@ -1,0 +1,11 @@
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\07-Compression\DataCompression\DataCompression.Algorithms\bin\Debug\net8.0\DataCompression.Algorithms.deps.json
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\07-Compression\DataCompression\DataCompression.Algorithms\bin\Debug\net8.0\DataCompression.Algorithms.dll
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\07-Compression\DataCompression\DataCompression.Algorithms\bin\Debug\net8.0\DataCompression.Algorithms.pdb
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\07-Compression\DataCompression\DataCompression.Algorithms\obj\Debug\net8.0\DataCompression.Algorithms.GeneratedMSBuildEditorConfig.editorconfig
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\07-Compression\DataCompression\DataCompression.Algorithms\obj\Debug\net8.0\DataCompression.Algorithms.AssemblyInfoInputs.cache
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\07-Compression\DataCompression\DataCompression.Algorithms\obj\Debug\net8.0\DataCompression.Algorithms.AssemblyInfo.cs
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\07-Compression\DataCompression\DataCompression.Algorithms\obj\Debug\net8.0\DataCompression.Algorithms.csproj.CoreCompileInputs.cache
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\07-Compression\DataCompression\DataCompression.Algorithms\obj\Debug\net8.0\DataCompression.Algorithms.dll
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\07-Compression\DataCompression\DataCompression.Algorithms\obj\Debug\net8.0\refint\DataCompression.Algorithms.dll
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\07-Compression\DataCompression\DataCompression.Algorithms\obj\Debug\net8.0\DataCompression.Algorithms.pdb
+E:\UNI\semester-9\Advanced Topics in Software Engineering\Tasks\07-Compression\DataCompression\DataCompression.Algorithms\obj\Debug\net8.0\ref\DataCompression.Algorithms.dll

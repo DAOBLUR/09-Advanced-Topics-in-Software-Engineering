@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Compressor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Text Compressor</h1>
+        </header>
+        <main>
+            <div class="upload-section" id="upload-section">
+                <input type="file" id="file-upload" accept=".txt,.huff" hidden>
+                <label for="file-upload" class="upload-button">Upload Text File</label>
+                <p>Or drag and drop a text file here</p>
+            </div>
+            <div class="output-section">
+                <button id="compress-button" class="action-button">Compress</button>
+                <button id="decompress-button" class="action-button">Decompress</button>
+                <a id="download-link" class="action-button" style="display: none;">Download</a>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+<style>
+    body {
+        font-family: Poppins,sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 25px;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        margin: 0;
+        color: #333;
+    }
+
+    p {
+        margin: 20px 0px;
+    }
+
+    .upload-section {
+        text-align: center;
+        margin-bottom: 20px;
+        border: 2px dashed #007bff;
+        padding: 20px 20px;
+        border-radius: 25px;
+    }
+
+    .upload-button {
+        display: inline-block;
+        padding: 20px 30px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+        .upload-button:hover {
+            background-color: #0056b3;
+        }
+
+    .upload-section.drag-over {
+        border-color: #0056b3;
+        background-color: #e6f7ff;
+    }
+
+    .action-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-transform: uppercase;
+        margin: 5px;
+    }
+
+        .action-button:hover {
+            background-color: #218838;
+        }
+
+    .output-section {
+        text-align: center;
+    }
+
+    #output-image {
+        max-width: 100%;
+        height: auto;
+        display: none;
+    }
+
+
+</style>
+</html>
